@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nabil_banking_app_ui/inner-screens/my_account.dart';
+import 'package:nabil_banking_app_ui/inner_widgets/custom_appbar.dart';
 import 'package:nabil_banking_app_ui/screens/login_screen.dart';
 
 void main() {
@@ -14,9 +16,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: const LoginScreen(),
+      // home: const LoginScreen(),
+      home: const MyAccount(),
+      // home: const CustomAppBar(),
     );
   }
 }

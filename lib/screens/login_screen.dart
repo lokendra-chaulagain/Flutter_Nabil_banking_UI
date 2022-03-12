@@ -123,21 +123,31 @@ class _LoginScreenState extends State<LoginScreen> {
                               padding:
                                   const EdgeInsets.only(left: 10, right: 10),
                               width: 370,
-                              height: 80,
+                              height: 90,
                               color: Colors.pink,
                               child: ListView.builder(
                                 scrollDirection: Axis.horizontal,
                                 itemCount: 20,
-                                // padding: const EdgeInsets.symmetric(horizontal: 20),
                                 itemBuilder: ((context, index) {
-                                  return const Padding(
-                                    padding:
-                                        EdgeInsets.only(left: 10, right: 10),
-                                    child: CircleAvatar(
-                                      // child: SizedBox(width: 10),
-                                      radius: 28,
-                                      backgroundColor: Colors.green,
-                                    ),
+                                  return Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Container(
+                                        child: const Padding(
+                                          padding: EdgeInsets.only(
+                                              left: 10, right: 10),
+                                          child: CircleAvatar(
+                                            // child: SizedBox(width: 10),
+                                            radius: 28,
+                                            backgroundColor: Colors.green,
+                                          ),
+                                        ),
+                                      ),
+                                      const SmallText(
+                                        text: "Hello",
+                                      )
+                                    ],
                                   );
                                 }),
                               ),

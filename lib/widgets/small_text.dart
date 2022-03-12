@@ -5,6 +5,8 @@ class SmallText extends StatelessWidget {
   final String text;
   final Color? color;
   final FontWeight? fontWeight;
+  // final FontWeight? size;
+
   //---------------------
   const SmallText({
     Key? key,
