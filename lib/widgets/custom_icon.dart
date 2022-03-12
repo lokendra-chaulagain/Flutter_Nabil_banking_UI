@@ -3,17 +3,20 @@ import 'package:flutter/material.dart';
 class CustomIcon extends StatelessWidget {
   //------------------
   final IconData icon;
+  final Color color;
+
   //------------------
   const CustomIcon({
     Key? key,
     required this.icon,
+    this.color = Colors.white,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Icon(
       icon,
-      color: Colors.white,
+      color: color,
       size: 34,
     );
   }

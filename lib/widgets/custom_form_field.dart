@@ -7,7 +7,7 @@ class CustomFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.grey,
+        color: Colors.grey.shade300,
         borderRadius: BorderRadius.circular(2),
       ),
       child: TextFormField(
