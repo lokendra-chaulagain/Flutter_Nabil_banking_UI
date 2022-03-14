@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nabil_banking_app_ui/widgets/card_box.dart';
 
+// ignore: must_be_immutable, use_key_in_widget_constructors
 class SendMoney extends StatelessWidget {
   double screenHeight = 0;
   double screenWidth = 0;

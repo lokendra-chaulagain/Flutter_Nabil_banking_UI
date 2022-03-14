@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nabil_banking_app_ui/inner-screens/my_account.dart';
-import 'package:nabil_banking_app_ui/inner-screens/send_money.dart';
-import 'package:nabil_banking_app_ui/inner_widgets/custom_appbar.dart';
-import 'package:nabil_banking_app_ui/screens/login_screen.dart';
+import 'package:nabil_banking_app_ui/smart_payment/favourite_payment_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,8 +18,10 @@ class MyApp extends StatelessWidget {
       ),
       // home: const LoginScreen(),
       // home: const MyAccount(),
-      home: SendMoney(),
+      // home: SendMoney(),
       // home: const CustomAppBar(),
+      //
+      home: const FavouritePaymentscreen(),
     );
   }
 }

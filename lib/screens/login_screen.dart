@@ -133,6 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
                                     children: [
+                                      // ignore: avoid_unnecessary_containers
                                       Container(
                                         child: const Padding(
                                           padding: EdgeInsets.only(
